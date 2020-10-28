@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShopCell" customModule="Candy_Commerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vishnu-mk-7-Kg9PLwufA-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="XXy-CP-5rj">
+                    <rect key="frame" x="16" y="14" width="116" height="116"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="116" id="YEU-gS-crf"/>
+                        <constraint firstAttribute="height" constant="116" id="ncg-h0-G1a"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgO-a3-vCy">
+                    <rect key="frame" x="140" y="14" width="194" height="116"/>
+                    <color key="backgroundColor" red="0.77094990019999998" green="0.22135734560000001" blue="0.33030223850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="116" id="aZH-bm-t1K"/>
+                        <constraint firstAttribute="width" constant="194" id="zlC-Ut-HPu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <state key="normal" title="BUY">
+                        <color key="titleColor" red="0.97275418039999995" green="0.97634702920000005" blue="0.97619050740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="boughtItem:" destination="iN0-l3-epB" eventType="touchUpInside" id="reY-5G-xRz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="XXy-CP-5rj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="1Xc-a6-Dvo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FgO-a3-vCy" secondAttribute="trailing" constant="16" id="PbY-vA-PHR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FgO-a3-vCy" secondAttribute="bottom" constant="20" id="T4p-E5-E5y"/>
+                <constraint firstItem="XXy-CP-5rj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="Voy-Uf-hVO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XXy-CP-5rj" secondAttribute="bottom" constant="20" id="cGW-4Q-gXm"/>
+                <constraint firstItem="FgO-a3-vCy" firstAttribute="leading" secondItem="XXy-CP-5rj" secondAttribute="trailing" constant="8" id="d1B-Gn-uE0"/>
+                <constraint firstItem="FgO-a3-vCy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="gjD-Y1-fHQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="buyButton" destination="FgO-a3-vCy" id="2T5-of-A6V"/>
+                <outlet property="candyImage" destination="XXy-CP-5rj" id="8p1-Ln-KWo"/>
+            </connections>
+            <point key="canvasLocation" x="27.536231884057973" y="-182.8125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="vishnu-mk-7-Kg9PLwufA-unsplash" width="2250" height="4000"/>
+    </resources>
+</document>

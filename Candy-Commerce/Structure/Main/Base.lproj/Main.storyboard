@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fiI-3e-jEV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--E-CANDY-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Candy_Commerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liliana-olivares-g56O5L0ZVmg-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="U92-2O-jhh">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="219-zf-79F"/>
+                                    <constraint firstAttribute="height" constant="808" id="VuU-Jo-gwg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="U92-2O-jhh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Yb-gw-R7N"/>
+                            <constraint firstItem="U92-2O-jhh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cvc-xn-A2e"/>
+                            <constraint firstAttribute="bottom" secondItem="U92-2O-jhh" secondAttribute="bottom" id="P95-mt-D8r"/>
+                            <constraint firstItem="U92-2O-jhh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RqV-nq-Ngq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="E-CANDY" id="aen-C9-cXx">
+                        <barButtonItem key="leftBarButtonItem" title="SIGNUP" style="done" id="QtT-uf-uLV">
+                            <color key="tintColor" red="0.77094990019999998" green="0.22135734560000001" blue="0.33030223850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="wSn-kv-LA1" kind="show" id="uoZ-uU-geN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="SHOP" style="done" id="0ju-IX-7Wm">
+                            <color key="tintColor" red="0.77094990019999998" green="0.22135734560000001" blue="0.33030223850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="X8S-GY-Np0" kind="show" id="IP7-HN-TDs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="JoinButton" destination="QtT-uf-uLV" id="tAy-zS-1J2"/>
+                        <outlet property="ShopButton" destination="0ju-IX-7Wm" id="vLd-Gk-OgE"/>
+                        <outlet property="mainView" destination="U92-2O-jhh" id="IDb-Yk-lJV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2215.9420289855075" y="128.57142857142856"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="bdz-M1-jEs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="SignUp" id="wSn-kv-LA1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jJr-my-ff0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6j2-Ve-lJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2973" y="-163"/>
+        </scene>
+        <!--ShopCollection-->
+        <scene sceneID="WTm-gU-hhf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ShopCollection" storyboardName="Shop" referencedIdentifier="ShopCollection" id="X8S-GY-Np0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Y0h-FG-hM7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Kq-e1-uaC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2740" y="-163"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2AE-6I-mYZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fiI-3e-jEV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Zd-OL-IBh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SfB-Iy-x5f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14w-SV-Ea2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305.7971014492755" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="liliana-olivares-g56O5L0ZVmg-unsplash" width="2667" height="4000"/>
+    </resources>
+</document>

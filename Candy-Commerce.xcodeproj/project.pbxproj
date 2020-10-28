@@ -13,6 +13,15 @@
 		5322D2BE24F49B2000700316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5322D2BC24F49B2000700316 /* Main.storyboard */; };
 		5322D2C024F49B2000700316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5322D2BF24F49B2000700316 /* Assets.xcassets */; };
 		5322D2C324F49B2000700316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5322D2C124F49B2000700316 /* LaunchScreen.storyboard */; };
+		53662CC324FDB4E3008003AF /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53662CC224FDB4E3008003AF /* Shop.storyboard */; };
+		53662CC524FDB4EC008003AF /* ShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53662CC424FDB4EC008003AF /* ShopCell.xib */; };
+		53662CC724FDB527008003AF /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53662CC624FDB527008003AF /* Shop.swift */; };
+		53662CC924FDB541008003AF /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53662CC824FDB541008003AF /* ShopCell.swift */; };
+		53662CCC24FDB56C008003AF /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53662CCB24FDB56C008003AF /* SignUp.storyboard */; };
+		53662CCE24FDB587008003AF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53662CCD24FDB587008003AF /* SignUpViewController.swift */; };
+		53662CD024FDB594008003AF /* Checkout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53662CCF24FDB594008003AF /* Checkout.storyboard */; };
+		53662CD224FDB59F008003AF /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53662CD124FDB59F008003AF /* CheckoutViewController.swift */; };
+		53C7ECFB24FEC3140032EF72 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7ECFA24FEC3140032EF72 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		5322D2BF24F49B2000700316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5322D2C224F49B2000700316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5322D2C424F49B2000700316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53662CC224FDB4E3008003AF /* Shop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
+		53662CC424FDB4EC008003AF /* ShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopCell.xib; sourceTree = "<group>"; };
+		53662CC624FDB527008003AF /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		53662CC824FDB541008003AF /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
+		53662CCB24FDB56C008003AF /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		53662CCD24FDB587008003AF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		53662CCF24FDB594008003AF /* Checkout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Checkout.storyboard; sourceTree = "<group>"; };
+		53662CD124FDB59F008003AF /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		53C7ECFA24FEC3140032EF72 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +75,63 @@
 			isa = PBXGroup;
 			children = (
 				5322D2B624F49B2000700316 /* AppDelegate.swift */,
+				53662CBD24FDB468008003AF /* Structure */,
 				5322D2B824F49B2000700316 /* SceneDelegate.swift */,
-				5322D2BA24F49B2000700316 /* ViewController.swift */,
-				5322D2BC24F49B2000700316 /* Main.storyboard */,
 				5322D2BF24F49B2000700316 /* Assets.xcassets */,
 				5322D2C124F49B2000700316 /* LaunchScreen.storyboard */,
 				5322D2C424F49B2000700316 /* Info.plist */,
 			);
 			path = "Candy-Commerce";
+			sourceTree = "<group>";
+		};
+		53662CBD24FDB468008003AF /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				53662CC124FDB499008003AF /* Checkout */,
+				53662CC024FDB48A008003AF /* SignUp */,
+				53662CBF24FDB483008003AF /* Shop */,
+				53662CBE24FDB479008003AF /* Main */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		53662CBE24FDB479008003AF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5322D2BC24F49B2000700316 /* Main.storyboard */,
+				5322D2BA24F49B2000700316 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		53662CBF24FDB483008003AF /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				53662CC424FDB4EC008003AF /* ShopCell.xib */,
+				53662CC824FDB541008003AF /* ShopCell.swift */,
+				53662CC624FDB527008003AF /* Shop.swift */,
+				53662CC224FDB4E3008003AF /* Shop.storyboard */,
+				53C7ECFA24FEC3140032EF72 /* CollectionViewController.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		53662CC024FDB48A008003AF /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				53662CCB24FDB56C008003AF /* SignUp.storyboard */,
+				53662CCD24FDB587008003AF /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		53662CC124FDB499008003AF /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				53662CCF24FDB594008003AF /* Checkout.storyboard */,
+				53662CD124FDB59F008003AF /* CheckoutViewController.swift */,
+			);
+			path = Checkout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +192,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53662CC324FDB4E3008003AF /* Shop.storyboard in Resources */,
+				53662CC524FDB4EC008003AF /* ShopCell.xib in Resources */,
+				53662CCC24FDB56C008003AF /* SignUp.storyboard in Resources */,
+				53662CD024FDB594008003AF /* Checkout.storyboard in Resources */,
 				5322D2C324F49B2000700316 /* LaunchScreen.storyboard in Resources */,
 				5322D2C024F49B2000700316 /* Assets.xcassets in Resources */,
 				5322D2BE24F49B2000700316 /* Main.storyboard in Resources */,
@@ -138,9 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53662CCE24FDB587008003AF /* SignUpViewController.swift in Sources */,
 				5322D2BB24F49B2000700316 /* ViewController.swift in Sources */,
 				5322D2B724F49B2000700316 /* AppDelegate.swift in Sources */,
 				5322D2B924F49B2000700316 /* SceneDelegate.swift in Sources */,
+				53C7ECFB24FEC3140032EF72 /* CollectionViewController.swift in Sources */,
+				53662CC724FDB527008003AF /* Shop.swift in Sources */,
+				53662CC924FDB541008003AF /* ShopCell.swift in Sources */,
+				53662CD224FDB59F008003AF /* CheckoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
